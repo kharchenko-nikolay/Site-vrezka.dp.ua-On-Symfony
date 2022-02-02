@@ -7,7 +7,38 @@
 {#<a href="tel:{{ 'app.phone.life' }}">Life</a>#}
 
 {% block body %}
-    <div class="main-container">
 
+    <div class="site-main-container">
+        <header>
+            <div class="headline-container">
+                <h1 class="headline">Врезка в трубу водопровода под давлением</h1>
+            </div>
+            <div class="header-img-container">
+                <img class="header-img" src="{{ asset('images/header.png') }}" alt="Врезка в трубу водопровода">
+            </div>
+            <div class="phones">
+                <address class="padding-right">г. Днепр</address>
+                <div class="padding-right">
+                    <img class="telecom-operator-logo"
+                         src="{{ asset('images/telecom-operators/lifecell.png') }}" alt="Лайф">
+                    <a href="tel:+380636364260" title="Лайф">063 63 64 260</a>
+                </div>
+                <div class="padding-right">
+                    <img class="telecom-operator-logo"
+                         src="{{ asset('images/telecom-operators/kievstar.png') }}" alt="Киевстар">
+                    <a href="tel:+380979728176" title="Киевстар">097 97 28 176</a>
+                </div>
+                <div class="padding-right">
+                    <img class="telecom-operator-logo"
+                         src="{{ asset('images/telecom-operators/vodafone.png') }}" alt="Водафон">
+                    <a href="tel:+380509882256" title="Водафон">050 98 82 256</a>
+                </div>
+            </div>
+        </header>
+        <hr>
+
+        <main>
+
+        </main>
     </div>
 {% endblock %}
