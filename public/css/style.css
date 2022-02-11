@@ -76,10 +76,18 @@ header{
     width: 60%;
 }
 
-/*==================================*/
-
 hr{
     width: 90%;
     border: 2px solid gray;
     border-radius: 100%;
+}
+
+/*==================================*/
+
+/*=======*/
+
+.description-site{
+    font-size: 1.6vw;
+    padding: 2% 20%;
+    text-align: center;
 }
