@@ -10,7 +10,6 @@ body{
 
 .site-main-container{
     width: 80%;
-    height: 100vh;
     margin: 0 auto;
     background-color: floralwhite;
     box-shadow: inset 0 0 20px gray;
@@ -82,12 +81,34 @@ hr{
     border-radius: 100%;
 }
 
-/*==================================*/
-
-/*=======*/
+/*========= СТИЛИ ДЛЯ БЛОКА ОПИСАНИЯ САЙТА ========*/
 
 .description-site{
     font-size: 1.6vw;
     padding: 2% 20%;
     text-align: center;
+}
+
+/*========= СТИЛИ ДЛЯ БЛОКА КАРУСЕЛИ ========*/
+
+.carousel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-image{
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+
+.arrow-left{
+    width: 6%;
+    transform: scale(-1,-1);
+}
+
+.arrow-right{
+    width: 6%;
 }

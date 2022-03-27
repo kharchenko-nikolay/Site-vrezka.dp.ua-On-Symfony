@@ -44,9 +44,13 @@
                     Также прокладываем новый водопровод или меняем старый.</p>
             </section>
 
-            <section>
-
+            <section class="carousel">
+                <img class="arrow-left" src="{{ asset('images/arrow.png') }}" alt="Стрелка влево">
+                <img class="carousel-image" src="{{ asset('images/vrezka.jpg') }}" alt="Врезка в трубу водопровода под давлением">
+                <img class="arrow-right" src="{{ asset('images/arrow.png') }}" alt="Стрелка вправо">
             </section>
+
         </main>
     </div>
+    <script src="{{ asset('js/get-photo-paths.js') }}"></script>
 {% endblock %}
