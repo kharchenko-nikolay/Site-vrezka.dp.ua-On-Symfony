@@ -105,10 +105,20 @@ hr{
 }
 
 .arrow-left{
-    width: 6%;
+    width: 5%;
     transform: scale(-1,-1);
 }
 
 .arrow-right{
-    width: 6%;
+    width: 5%;
+}
+
+.arrow-left:hover, .arrow-right:hover{
+    background-color: gray;
+    border-radius: 100%;
+    box-shadow: 0 0 5px black;
+}
+
+.arrow-left:active, .arrow-right:active{
+    background-color: black;
 }

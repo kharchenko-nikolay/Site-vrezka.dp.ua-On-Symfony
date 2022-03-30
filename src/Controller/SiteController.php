@@ -15,10 +15,10 @@ class SiteController extends AbstractController
         return $this->render('site/index.html.twig', []);
     }
 
-    public function getPhotoPaths(Request $request)
+    public function getPhotoNames(Request $request)
     {
         return new JsonResponse([
-            'pathsToPhotos' => scandir('images/photo-of-works')
+            'photoNames' => scandir('images/photo-of-works')
         ]);
     }
 }

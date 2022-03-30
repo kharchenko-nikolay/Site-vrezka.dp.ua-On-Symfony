@@ -2,6 +2,6 @@ index:
     path: /
     controller: App\Controller\SiteController::index
 
-get-photo-paths:
-    path: /get-photo-paths
-    controller: App\Controller\SiteController::getPhotoPaths
+get-photo-names:
+    path: /get-photo-names
+    controller: App\Controller\SiteController::getPhotoNames
