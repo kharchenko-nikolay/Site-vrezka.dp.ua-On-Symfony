@@ -1,8 +1,9 @@
 
 body{
     padding: 0;
-    /*background-color: navajowhite;*/
-    background-color: darkslategray;
+    margin: 10px 0 0 0;
+    background-color: navajowhite;
+    /*background-color: darkslategray;*/
 }
 
 
@@ -121,4 +122,68 @@ hr{
 
 .arrow-left:active, .arrow-right:active{
     background-color: black;
+}
+
+/*========= СТИЛИ ДЛЯ БЛОКА ЦЕНЫ ========*/
+
+/*table{*/
+/*    display: inline-block;*/
+/*    font-family: sans-serif;*/
+/*    background: slategray;*/
+/*    border-radius: 20px;*/
+/*    border-spacing: 5px;*/
+/*}*/
+
+/*tr > td:first-child{*/
+/*    text-align: left;*/
+/*}*/
+
+/*th{*/
+/*    font-size: 18px;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*td{*/
+/*    background: lightgray;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*========= СТИЛИ ДЛЯ ПОДВАЛА САЙТА ========*/
+
+footer{
+    height: 100px;
+    background: linear-gradient(#979797, #494949);
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer > address{
+    font-size: 22px;
+}
+
+.footer-numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 185px;
+}
+
+.phone{
+    width: 84%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.phone > img{
+    filter: grayscale(100%);
+    width: 20px;
+}
+
+.phone > a{
+    all: unset;
 }
