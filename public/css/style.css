@@ -6,7 +6,6 @@ body{
     /*background-color: darkslategray;*/
 }
 
-
 /*======== СТИЛИ ДЛЯ ШАПКИ САЙТА =========*/
 
 .site-main-container{
@@ -27,6 +26,7 @@ header{
 .headline{
     text-align: left;
     font-size: 1.8vw;
+    color: rgba(0,0,0,.9);
     padding: 0 0 1vw 2.5vw;
 }
 
@@ -42,29 +42,28 @@ header{
     margin: 0 auto;
 }
 
-.phones{
+.header-phone-numbers{
     width: 20%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     padding: 0 0 1vw 0;
 }
 
-.phones > div{
+.header-phone-numbers > div{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 4.5vw .2vw 0;
 }
 
-.phones > div > a{
+.header-phone-numbers > div > a{
     text-decoration: none;
     padding: 0 0 0 .4vw;
-}
-
-.padding-right{
-    padding: 0 4.5vw .2vw 0;
+    color: red;
+    font-family: sans-serif;
 }
 
 .telecom-operator-logo{
@@ -126,27 +125,27 @@ hr{
 
 /*========= СТИЛИ ДЛЯ БЛОКА ЦЕНЫ ========*/
 
-/*table{*/
-/*    display: inline-block;*/
-/*    font-family: sans-serif;*/
-/*    background: slategray;*/
-/*    border-radius: 20px;*/
-/*    border-spacing: 5px;*/
-/*}*/
+.prices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4vw 0;
+    font-size: 24px;
+}
 
-/*tr > td:first-child{*/
-/*    text-align: left;*/
-/*}*/
+.prices-headline{
+    text-align: center;
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
 
-/*th{*/
-/*    font-size: 18px;*/
-/*    padding: 10px;*/
-/*}*/
-
-/*td{*/
-/*    background: lightgray;*/
-/*    padding: 10px;*/
-/*}*/
+.prices > span:not(:first-child){
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
 
 /*========= СТИЛИ ДЛЯ ПОДВАЛА САЙТА ========*/
 
@@ -165,7 +164,7 @@ footer > address{
     font-size: 22px;
 }
 
-.footer-numbers{
+.footer-phone-numbers{
     display: flex;
     flex-direction: column;
     align-items: center;
