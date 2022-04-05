@@ -204,10 +204,19 @@ footer > address{
     }
 
     header{
-        display: block;
+        flex-wrap: wrap;
     }
 
-    .headline-container, .header-img-container, .header-img{
+    .headline-container{
+        order: 1;
+        width: 100%;
+    }
+
+    .header-phone-numbers{
+        order: 2;
+    }
+
+    .header-img-container, .header-img{
         width: 100%;
     }
 
