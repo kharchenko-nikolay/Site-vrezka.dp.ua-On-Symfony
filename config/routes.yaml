@@ -5,3 +5,7 @@ index:
 get-photo-names:
     path: /get-photo-names
     controller: App\Controller\SiteController::getPhotoNames
+
+photo-upload:
+    path: /photo-upload
+    controller: App\Controller\SiteController::buildForm
