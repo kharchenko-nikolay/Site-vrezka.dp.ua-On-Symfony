@@ -4,10 +4,10 @@
 namespace App\Controller;
 
 
+use App\Service\FileUploader;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -27,7 +27,7 @@ class SiteController extends AbstractController
     }
 
     //Создание и валидация формы для загрузки фотографий в карусель на сайте
-    public function buildForm(Request $request)
+    public function buildForm(Request $request, FileUploader $fileUploader)
     {
         //Создание формы для загрузки файлов
         $form = $this->createFormBuilder()
@@ -46,22 +46,7 @@ class SiteController extends AbstractController
 
             if ($photos){
                 foreach ($photos as $photo){
-
-                    $originalFileName = pathinfo($photo->getClientOriginalName())['basename'];
-
-                    try {
-                        if (in_array($originalFileName, $photoFileNames)){
-                            throw new FileException(
-                                "<span>{$originalFileName} - уже есть на сайте!</span>");
-                        }
-
-                        $photo->move($this->getParameter('photos_directory'), $originalFileName);
-
-                        echo "<span>{$originalFileName} - успешно загружено!</span>";
-
-                    } catch (FileException $ex){
-                        echo $ex->getMessage();
-                    }
+                    $fileUploader->upload($photo, $photoFileNames);
                 }
             }
         }
