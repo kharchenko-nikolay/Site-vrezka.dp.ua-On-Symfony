@@ -1,0 +1,14 @@
+html, body{
+    height: 100%;
+}
+
+.container-fluid{
+    background: linear-gradient(90deg, rgba(73,73,74,1) 0%, rgba(186,186,189,1) 100%,
+    rgba(0,212,255,1) 100%);
+}
+
+.shadow-sm{
+    background: linear-gradient(360deg, rgba(73,73,74,1) 0%, rgba(186,186,189,1) 100%,
+    rgba(0,212,255,1) 100%);
+    border-radius: 2%;
+}
