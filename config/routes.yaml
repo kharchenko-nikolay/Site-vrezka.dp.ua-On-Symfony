@@ -8,4 +8,4 @@ get-photo-names:
 
 photo-upload:
     path: /photo-upload
-    controller: App\Controller\SiteController::buildForm
+    controller: App\Controller\PhotoUploadController::buildForm
