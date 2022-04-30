@@ -2,7 +2,13 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Врезка в трубу водопровода{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta property="og:image" content="{{ asset('images/logo.jpg') }}">
+        <meta property="og:title" content="Врезка в трубу водопровода под давлением Днепр.">
+        {% block title %}{% endblock %}
+        {% block description %}{% endblock %}
+        {% block keywords %}{% endblock %}
         <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
         {% block stylesheets %}{% endblock %}
         {% block javascripts %}{% endblock %}
