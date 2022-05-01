@@ -1,0 +1,4 @@
+User-agent: *
+
+Host: https://vrezka.dp.ua
+Sitemap: https://vrezka.dp.ua/sitemap.xml
