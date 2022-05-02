@@ -1,4 +1,7 @@
 User-agent: *
+Disallow: /login/
+Disallow: /photo-upload/
+Disallow: /get-photo-names/
 
 Host: https://vrezka.dp.ua
 Sitemap: https://vrezka.dp.ua/sitemap.xml

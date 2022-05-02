@@ -7,7 +7,7 @@
     let pathToPhoto = 'images/photo-of-works/';
 
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', "/get-photo-names");
+    xhr.open('POST', "/get-photo-names");
 
     //Json запрос на получение названий всех фотографий из папки(photo-of-works)
     xhr.onreadystatechange = function () {

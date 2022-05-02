@@ -5,6 +5,7 @@ index:
 get-photo-names:
     path: /get-photo-names
     controller: App\Controller\SiteController::getPhotoNames
+    methods: POST
 
 photo-upload:
     path: /photo-upload
